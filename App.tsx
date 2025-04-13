@@ -25,7 +25,7 @@ const App: React.FC = props => {
   }, []);
 
   const codeScanner: CodeScanner = useCodeScanner({
-    codeTypes: ['ean-13', 'qr'],
+    codeTypes: ['qr'],
     onCodeScanned: codes => {
       for (const code of codes) {
         setIsScanning(false);
